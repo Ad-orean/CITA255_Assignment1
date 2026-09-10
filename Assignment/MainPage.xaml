@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Assignment.MainPage">
+
+    <VerticalStackLayout
+        Padding="48"
+        Spacing="32">
+
+        <Label
+            x:Name="titleLabel"
+            Text="Tip Calculator"
+            FontSize="32"
+            HorizontalOptions="Center" />
+
+        <Entry
+            x:Name="billEntry"
+            Placeholder="Enter bill amount"
+            Keyboard="Numeric" />
+
+        <Button
+            x:Name="calculateButton"
+            Text="Calculate Tip"
+            Clicked="OnCalculateClicked" />
+
+        <Label
+            x:Name="resultLabel"
+            Text="Enter a bill and tap Calculate."
+            FontSize="18"
+            HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+</ContentPage>
